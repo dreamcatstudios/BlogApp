@@ -1,71 +1,90 @@
 body {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .heading {
-    color: black;   
-    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
 
   .navbar {
-    padding: 7px;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: #333;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
+
   .navbar a {
-    float: left;
-    font-size: 21px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
   }
+
   .navbar a:hover {
     background-color: #111;
   }
+
   .navbar-right {
-    float: right;
+    display: flex;
+    align-items: center;
   }
 
-footer {
+  footer {
     position: fixed;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     bottom: 0;
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 5px;
+    padding: 1rem;
     text-align: center;
-  }
 
+  }
 
   form {
     font-family: Arial;
-    margin: 20px;
+    margin: 2rem;
+    margin-bottom: 10rem;
+
   }
+
   label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    font-weight: bold;
   }
-  input[type="text"], textarea {
+
+  input[type="text"],
+  textarea {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 0.5rem;
   }
+
   input[type="submit"] {
     background-color: #333;
     color: white;
-    padding: 12px 20px;
+    padding: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+
   input[type="submit"]:hover {
     background-color: #111;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 80%;
   }

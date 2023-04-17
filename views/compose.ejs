@@ -1,5 +1,6 @@
 
     <%- include('partials/header') %>
+    <div class="container">
         <h1 class="heading">Compose</h1>
         <form action="/compose" method="post">
             <label for="title">Title:</label><br>
@@ -8,5 +9,5 @@
             <textarea id="post" name="postContent" rows="7" cols="50"></textarea><br><br>
             <input type="submit" value="Post">
         </form>
-
+    </div>
     <%- include('partials/footer') %>
